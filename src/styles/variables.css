@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Source+Sans+3&display=swap);
+
+:root {
+  /* Esquema de Cores "Light" */
+
+  --light-text-color: #1f2d1f ;
+  --light-primary-color: #e2f1e4;
+  --light-secundary-color: #c7d3c0;
+  --light-tertiary-color: #99ab99; 
+  
+  /* Esquema de Cores "Dark" */
+
+  --dark-text-color: #fafafa;
+  --dark-primary-color: #293033;
+  --dark-secondary-color: #3f4c42;
+  --dark-tertiary-color: #758975;
+  
+  /* Cor de destaque */
+
+  --highlight-color: #6eb872;
+
+  /* Fonte padrão */
+
+  --font-family: 'Poppins', sans-serif;
+}
+

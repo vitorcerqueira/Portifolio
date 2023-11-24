@@ -1,0 +1,107 @@
+input[type="checkbox"] {
+  display: none;
+}
+
+label > .bi-sun {
+  display: none;
+}
+
+.dark,
+.dark header {
+  background-color: var(--dark-primary-color);
+  color: var(--dark-text-color);
+}
+
+.dark .select-lang {
+  background-color: var(--dark-primary-color);
+}
+
+.dark .navbar_dropdown_toggle {
+  color: var(--dark-text-color);
+}
+
+.dark a {
+  color: var(--dark-text-color);
+}
+
+.dark .icon .line {
+  background-color: var(--dark-text-color);
+}
+
+.dark .navbar_content .navbar_mobile .mobile_links {
+  background-color: var(--dark-primary-color);
+}
+.dark .img-logo {
+  filter: drop-shadow(0px 0px 5px var(--highlight-color));
+}
+
+.dark .bi-sun {
+  display: block;
+  transition: 0.5s ease;
+}
+
+.bi-sun:hover {
+  filter: drop-shadow(0px 0px 5px orange)
+}
+
+.dark .bi-moon-stars {
+  display: none;
+}
+
+.dark section#home {
+  background-color: var(--dark-primary-color);
+}
+
+.dark .social-contact a {
+  border-color: var(--dark-text-color);
+}
+
+.dark .background-img-overlay-home::after {
+  background: linear-gradient(to left, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, var(--dark-primary-color) 90%),
+              linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0) 50%, var(--dark-primary-color) 100%), 
+              linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 60%, var(--dark-primary-color) 90%);
+}
+
+.dark section#about {
+  background-color: var(--dark-secondary-color);
+}
+
+.dark .background-img-overlay-about::after {
+  background: linear-gradient(to left, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, var(--dark-secondary-color) 90%),
+              linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0) 50%, var(--dark-secondary-color) 100%), 
+              linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 60%, var(--dark-secondary-color) 90%);
+}
+
+.dark section#skills {
+  background-color: var(--dark-primary-color);
+}
+
+.dark .my_skill_logo_box {
+  background-color: var(--dark-tertiary-color);
+}
+
+.dark section#projects {
+  background-color: var(--dark-secondary-color);
+}
+
+.dark .box_project {
+  background-color: var(--dark-tertiary-color);
+}
+
+.dark .box_project_skill_icon {
+  background-color: var(--dark-primary-color);
+}
+
+.dark section#contact {
+  background-color: var(--dark-primary-color);
+}
+
+.dark .background-img-overlay-contact::after {
+  background: linear-gradient(to right, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, var(--dark-primary-color) 95%),
+              linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0) 60%, var(--dark-primary-color) 90%), 
+              linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 60%, var(--dark-primary-color) 95%);
+}
+
+.dark footer {
+  background-color: var(--dark-primary-color);
+}

@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 9%;
+  background-color: var(--light-primary-color);
+  z-index: 2;
+}
+
+.img-logo {
+  width: 35px;
+  height: 40px;
+  filter: drop-shadow(0px 0px 5px var(--light-text-color));
+}
+
+@media only screen and (max-width: 425px) {
+  .img-logo {
+    width: 25px;
+    height: 30px;
+    margin: 0.5rem;
+  }
+}

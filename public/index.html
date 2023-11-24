@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Essa Pagína foi criar com o intuito de mostrar os projetos de Vitor Cerqueira"
+    />
+    <meta name="author" content="Vitor Cerqueira" />
+    <meta
+      name="keywords"
+      content="portfolio, dev, desenvolvedor, front-end, javascript, css, html"
+    />
+    <meta property="og:title" content="Pórtifolio | Vitor Cerqueira" />
+    <meta property="og:description" content="Meu pórtfolio pessoal" />
+    <meta
+      property="og:image"
+      content="https://vitor-portifolio.vercel.app/logo.webp"
+    />
+    <meta property="og:url" content="https://vitor-portifolio.vercel.app/" />
+    <link
+      rel="icon"
+      href="ec7320e2f246a0f63d81.webp"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="ec7320e2f246a0f63d81.webp"
+      sizes="32x32"
+      type="image/png"
+    />
+    <title>Pórtifolio | Vitor Cerqueira</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script
+      src="https://kit.fontawesome.com/ba28e34523.js"
+      crossorigin="anonymous"
+      defer="defer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/i18next@21.3.2/dist/umd/i18next.min.js"
+      defer="defer"
+    ></script>
+    <script defer="defer" src="index.min.js"></script>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body class="dark">
+    <div class="wrapper-parallax">
+      <main>
+        <header>
+          <img
+            src="ec7320e2f246a0f63d81.webp"
+            alt="Vitor Cerqueira"
+            class="img-logo"
+          />
+          <nav class="navbar_content">
+            <div class="navbar_dropdown">
+              <button class="navbar_dropdown_toggle" id="dropdown">
+                <img
+                  src="5d796d2f3b43080a4b07.webp"
+                  alt="lang-icon"
+                  class="lang-icon"
+                />
+                <i class="fa-solid fa-caret-down"></i>
+              </button>
+              <ul class="select-lang" id="dropdownMenu">
+                <li>
+                  <a href="#" class="lang-option active" id="toggle-pt"
+                    >Português</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="lang-option" id="toggle-en">English</a>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar_switch_theme">
+              <input type="checkbox" name="change-theme" id="change-theme" />
+              <label for="change-theme"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-moon-stars"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
+                  />
+                  <path
+                    d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-sun"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                  /></svg
+              ></label>
+            </div>
+            <ul class="navbar_links">
+              <li>
+                <a href="#home" aria-label="Inicio" data-i18n="home">Inicio</a>
+              </li>
+              <li>
+                <a href="#about" aria-label="Sobre" data-i18n="about">Sobre</a>
+              </li>
+              <li>
+                <a href="#skills" aria-label="Habilidades" data-i18n="skills"
+                  >Habilidades</a
+                >
+              </li>
+              <li>
+                <a href="#projects" aria-label="Projetos" data-i18n="projects"
+                  >Projetos</a
+                >
+              </li>
+              <li>
+                <a href="#contact" aria-label="Contato" data-i18n="contact"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+            <div class="navbar_mobile">
+              <button class="icon" id="toggle" aria-label="button">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+              </button>
+              <ul class="mobile_links">
+                <li>
+                  <a href="#home" aria-label="Inicio" data-i18n="home"
+                    >Inicio</a
+                  >
+                </li>
+                <li>
+                  <a href="#about" aria-label="Sobre" data-i18n="about"
+                    >Sobre</a
+                  >
+                </li>
+                <li>
+                  <a href="#skills" aria-label="Habilidades" data-i18n="skills"
+                    >Habilidades</a
+                  >
+                </li>
+                <li>
+                  <a href="#projects" aria-label="Projetos" data-i18n="projects"
+                    >Projetos</a
+                  >
+                </li>
+                <li>
+                  <a href="#contact" aria-label="Contato" data-i18n="contact"
+                    >Contato</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <section id="home">
+          <div class="background-img-overlay-home"></div>
+          <div class="home-section">
+            <h1 data-anime="left">Vitor Cerqueira</h1>
+            <h2 data-anime="left" data-i18n="homeH2">
+              Desenvolvedor Front-End
+            </h2>
+            <p data-anime="left" data-i18n="homeP1">
+              Programador Front-End dedicado e entusiasmado. Com uma formação
+              sólida em desenvolvimento web, focado em design, usabilidade e
+              responsividade, buscando sempre criar interfaces incríveis que
+              proporcionem uma experiência excepcional aos usuários.
+            </p>
+            <div class="social-contact" data-anime="up">
+              <p data-i18n="homeP2">
+                Entre em contato comigo pelas redes sociais:
+              </p>
+              <a
+                href="https://www.linkedin.com/in/vitor-cerqueira-dos-santos-89768b147/"
+                target="_blank"
+                aria-label="Acesse meu perfil do linkedin"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://github.com/vitorcerqueira"
+                target="_blank"
+                aria-label="Acesse meu perfil do github"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://wa.me/554188353315"
+                target="_blank"
+                aria-label="Entre em contato comigo no WhatsApp"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+        <div class="module parallax parallax-1"></div>
+        <section id="about">
+          <div class="background-img-overlay-about"></div>
+          <div class="about-section" data-anime="left">
+            <h2 data-i18n="aboutMeH2">
+              Além do código,
+              <span class="span_color" data-i18n="aboutMeSpan"
+                >quem sou eu?</span
+              >
+            </h2>
+            <p data-i18n="aboutMeP1">
+              Meu nome é Vitor Cerqueira atualmente sou um profissional em
+              transição de carreira, saindo da área da saúde para me aventurar
+              no mundo da programação. Por sete anos, atuei como Técnico de
+              Laboratório, dedicando-me a cuidar de pacientes e auxiliando a
+              equipe médica. No entanto, meu interesse crescente por tecnologia
+              me levaram a seguir pela a área de programação.
+            </p>
+            <p data-i18n="aboutMeP2">
+              Como Programador Front-End, estou imerso em um universo repleto de
+              desafios estimulantes e oportunidades de aprendizado constante.
+              Cada dia me motiva a me tornar um Programador FullStack no futuro,
+              aprofundando meu conhecimento e habilidades para contribuir de
+              forma significativa para a comunidade tecnológica.
+            </p>
+          </div>
+        </section>
+        <div class="module parallax parallax-2"></div>
+        <section id="skills">
+          <div class="background-img-overlay-skills"></div>
+          <h2 data-anime="down" data-i18n="skillsH2">
+            Minhas
+            <span class="span_color" data-i18n="skillsSpan">Habilidades</span>
+          </h2>
+          <p data-anime="down" data-i18n="skillsP1">
+            Nesta seção estão algumas das habilidades que desenvolvi e domino
+            bem como Soft Skills e Hard Skills que me ajudam a criar soluções
+            criativas e funcionais para meus clientes.
+          </p>
+          <div class="my_skills">
+            <div class="my_skill_logo_box box1" data-anime="up">
+              <img
+                src="481fb78d3694d389ccd2.webp"
+                alt="webDeveloper"
+                class="logo_box_laptop"
+              />
+              <h3 data-i18n="mySkill1H3">Desenvolvimento Web (Front-End)</h3>
+              <p data-i18n="mySkill1P1">
+                Experiencia em desenvolvimento web Front-End com foco em
+                tecnologias modernas.
+              </p>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt icon-tec"></i>
+              <i class="fa-brands fa-square-js icon-tec"></i>
+            </div>
+            <div class="my_skill_logo_box box2" data-anime="up">
+              <img
+                src="66b022ffc2ccbced1374.webp"
+                alt="webDesign"
+                class="logo_box_web_design"
+              />
+              <h3>Web Design</h3>
+              <p data-i18n="mySkill2P1">
+                Desenvolvimento de projetos modernos, com designs de interface
+                visualmente atraentes, responsivas com foco na experiência do
+                usuário.
+              </p>
+            </div>
+            <div class="my_skill_logo_box box3" data-anime="up">
+              <img
+                src="245ea3fa7b05fb78fc5c.webp"
+                alt="versionManeger"
+                class="logo_box_git_version"
+              />
+              <h3 data-i18n="mySkill3H3">Gerenciamento de versões</h3>
+              <p data-i18n="mySkill3P1">
+                Experiencia com ferramenta de gerenciamento de versão para
+                projetos.
+              </p>
+              <i class="fa-brands fa-git-alt icon-tec"></i>
+            </div>
+            <div class="my_skill_logo_box box4" data-anime="up">
+              <img
+                src="29d2512e30d63e39b7e2.webp"
+                alt="softSkill"
+                class="logo_box_soft_skill"
+              />
+              <h3>Soft Skills e Hard Skills</h3>
+              <p data-i18n="mySkill4P1">
+                Sou um profissional com boa comunicação interpessoal e
+                capacidade de adaptação, o que me permite trabalhar em equipe e
+                enfrentar desafios de forma colaborativa. Minha combinação de
+                soft skills e hard skills me torna um programador front-end
+                eficiente e comprometido e em contínuo crescimento profissional.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="module parallax parallax-3"></div>
+        <section id="projects">
+          <div class="background-img-overlay-project"></div>
+          <h2 data-anime="up" data-i18n="projectsH2">
+            Meus
+            <span class="span_color" data-i18n="projectsSpan">Projetos</span>
+          </h2>
+          <div class="wrapper" data-anime="left">
+            <div class="slide-wrapper" data-slide="wrapper">
+              <button
+                class="slide-nav-button slide-nav-previous"
+                data-slide="nav-previous-button"
+                aria-label="previous"
+              >
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button
+                class="slide-nav-button slide-nav-next"
+                data-slide="nav-next-button"
+                aria-label="next"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+              <div class="slide-list" data-slide="list">
+                <div class="slide-itens" data-slide="item" data-index="1">
+                  <div class="slide-content">
+                    <div class="box_project box1">
+                      <img
+                        src="b7891df7ed937c6c5daa.webp"
+                        alt="catRelax"
+                        class="box_project_exemple_img"
+                      />
+                      <h3 data-i18n="projectH3">Em Breve</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-controls" data-slide="controls-wrapper"></div>
+            </div>
+          </div>
+        </section>
+        <div class="module parallax parallax-4"></div>
+        <section id="contact">
+          <div class="background-img-overlay-contact"></div>
+          <h2 data-anime="down" data-i18n="contactH2">
+            Vamos trabalhar
+            <span class="span_color" data-i18n="contactSpan">juntos...</span>
+          </h2>
+          <div class="contact_link" data-anime="up">
+            <a
+              href="https://www.linkedin.com/in/vitor-cerqueira-dos-santos-89768b147/"
+              class="contact_link_box btn"
+              target="_blank"
+              aria-label="Acesse meu perfil do linkedin"
+              ><i class="fa-brands fa-linkedin"></i>Linkedin</a
+            >
+            <a
+              href="https://github.com/vitorcerqueira"
+              class="contact_link_box btn"
+              target="_blank"
+              aria-label="Acesse meu perfil do github"
+              ><i class="fa-brands fa-github"></i>GitHub</a
+            >
+            <a
+              href="https://wa.me/554188353315"
+              class="contact_link_box btn"
+              target="_blank"
+              aria-label="Entre em contato comigo pelo WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i>WhatsApp</a
+            >
+          </div>
+        </section>
+        <footer>
+          <p>
+            <span data-i18n="footerSpan1">Copyright © 2023 - feito com </span
+            ><i class="fa-regular fa-heart"></i>
+            <span data-i18n="footerSpan2"
+              >Vitor Cerqueira | Todos os Direitos Reservados.</span
+            >
+          </p>
+          <a href="#home" class="footer_button" aria-label="Back to home"
+            ><i class="fa-solid fa-angles-up"></i
+          ></a>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

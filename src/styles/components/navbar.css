@@ -1,0 +1,234 @@
+.navbar_content {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: transparent;
+  align-items: center;
+}
+
+.navbar_content .navbar_links li{
+  display: inline-block;
+}
+
+.navbar_content .navbar_links li:not(:last-of-type){
+  margin-right: 2rem;
+}
+
+.navbar_content .navbar_links a{
+  display: inline-block;
+  padding: 1rem;
+  transition: 0.5s ease;
+}
+
+.navbar_content .navbar_links a:hover{
+  color: var(--highlight-color);
+}
+
+.navbar_links a.active {
+  color: var(--highlight-color);
+}
+
+.navbar_content .navbar_mobile,
+.navbar_content .navbar_mobile .mobile_links {
+  display: none;
+}
+
+/* Botão de mudança de linguagem */
+
+.navbar_dropdown {
+  position: relative;
+  margin-right: 2rem;
+}
+
+.navbar_dropdown_toggle {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar_dropdown_toggle i {
+  margin-left: 5px;
+  padding-right: 11px;
+}
+
+.select-lang {
+  display: none;
+  position: absolute;
+  top: 125.5%;
+  right: 20%;
+  background-color: var(--light-primary-color);
+  list-style: none;
+  padding: 8px 0;
+}
+
+.select-lang li {
+  padding: 8px 16px;
+}
+
+.select-lang a {
+  display: block
+}
+
+.lang-icon {
+  padding: 8px 0 8px 16px;
+  width: 31px;
+  transition: 0.5s ease;
+}
+
+.lang-icon:hover {
+  filter: drop-shadow(0px 0px 5px var(--highlight-color));
+}
+
+.select-lang a.active {
+  color: var(--highlight-color);
+}
+
+.select-lang a:hover {
+  color: var(--highlight-color);
+}
+
+.show {
+  display: block;
+}
+
+/* Botão de mudança de tema */
+
+.navbar_switch_theme {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+} 
+
+.navbar_switch_theme label {
+  cursor: pointer;
+  transition: 0.5s ease;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar_switch_theme label:hover {
+  color: var(--dark-text-color);
+  filter: drop-shadow(0px 0px 5px var(--light-text-color));
+}
+
+/* Media Query para o menu burger */
+
+@media only screen and (max-width: 840px) {
+  .navbar_dropdown {
+    margin-right: 0.5rem;
+  }
+  .navbar_content .navbar_mobile {
+    display: flex;
+    align-items: center;
+    transition: width 0.6s linear;
+    margin-left: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .navbar_content .navbar_links {
+    display: none;
+  }
+
+  .navbar_content .navbar_mobile .mobile_links {
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    position: absolute;
+    top: 98%;
+    left: 0;
+    padding: 1rem 0;
+    z-index: 1;
+    background-color: var(--light-primary-color);
+    transition: width 0.6s linear;
+  }
+
+  .navbar_content .navbar_mobile .mobile_links li {
+    margin-right: 0;
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: transform 0.6s linear, opacity 0.6s linear;
+  }
+
+  .navbar_content .navbar_mobile .mobile_links li a{
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    transition: 0.5s ease;
+  }
+
+  .mobile_links a.active {
+    color: var(--highlight-color);
+  }
+
+  .navbar_content .navbar_mobile.active {
+    width: 50%;
+  }
+
+  .navbar_content .navbar_mobile.active .mobile_links {
+    width: 100%;
+  }
+
+  .navbar_content .navbar_mobile.active .mobile_links li {
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+  
+  .navbar_content .navbar_mobile .mobile_links a {
+    position: relative;
+  }
+
+  .icon {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    right: 31px;
+  }
+  
+  .icon:focus {
+    outline: 0;
+  }
+
+  .icon .line {
+    background-color: var(--light-text-color);
+    height: 2px;
+    position: absolute;
+    width: 20px;
+    top: 10px;
+    left: 1px;
+    transition: transform 0.6s linear;
+  }
+
+  .icon .line2 {
+    top: auto;
+    bottom: 10px;
+  }
+
+  .navbar_mobile.active .icon .line1 {
+    transform: rotate(-765deg) translateY(5.5px);
+  }
+
+  .navbar_mobile.active .icon .line2 {
+    transform: rotate(765deg) translateY(-5.5px);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .lang-icon {
+    width: 28px;
+  }
+
+  .navbar_switch_theme label {
+    width: 1.4rem;
+  height: 1.4rem;
+  }
+}
