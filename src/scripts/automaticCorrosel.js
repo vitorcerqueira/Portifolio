@@ -63,7 +63,7 @@ export function initSlider({
         state.savedPosition = position;
         slideList.style.transform = `translateX(${position}px)`;
       }
-
+F
       // Função para calcular a posição central do slide
       function getCenterPosition({ index }) {
         const slideItem = slideItems[index];
