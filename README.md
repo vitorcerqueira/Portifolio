@@ -38,7 +38,7 @@ https://vitor-portifolio-eosin.vercel.app/
 
 Se você quiser entrar em contato comigo ou saber mais sobre o meu trabalho, você pode me encontrar em:
 
-- Email: [damassa.dan@gmail.com](mailto:vitor94.cerqueira@gmail.com)
+- Email: [vitor94.cerqueira@gmail.com](mailto:vitor94.cerqueira@gmail.com)
 - LinkedIn: [Vitor Cerqueira](https://www.linkedin.com/in/vitor-cerqueira-dos-santos-89768b147/)
 
 Sinta-se à vontade para explorar o meu portfólio e conhecer os meus projetos. Obrigado por visitar!
